@@ -14,11 +14,11 @@ categories = [
 ]
 
 [dependencies]
-tracing-subscriber = { version = "0.3", features = [
+tracing-subscriber = { git = "https://github.com/element-hq/tracing.git", rev = "ca9431f74d37c9d3b5e6a9f35b2c706711dab7dd", features = [
     "fmt",
     "smallvec",
 ], default-features = false }
-tracing-core = { version = "0.1", default-features = false }
+tracing-core = { git = "https://github.com/element-hq/tracing.git", rev = "ca9431f74d37c9d3b5e6a9f35b2c706711dab7dd", default-features = false }
 sharded-slab = "0.1"
 lazy_static = "1"
 smallvec = "1"
